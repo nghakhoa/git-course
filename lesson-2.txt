@@ -2,7 +2,7 @@
 - git init: sử dụng để khởi tạo repository local
 - git add <file name>: thêm file code đã lựa chọn (<file name>) đưa vào vùng staging
 - git add . : thêm toàn bộ file code trong quá trình thay đổi đưa vào vùng staging
-- git commit - m"message": push code lên repository
+- git commit - m "message": push code lên repository
 
 2. Liệt kê file theo từng vùng:
 a. Tạo 3 file: file1, file2, file3 > chưa xuất hiện tại vùng nào
