@@ -1,0 +1,13 @@
+1. Giải thích câu lệnh:
+- git init: sử dụng để khởi tạo repository local
+- git add <file name>: thêm file code đã lựa chọn (<file name>) đưa vào vùng staging
+- git add . : thêm toàn bộ file code trong quá trình thay đổi đưa vào vùng staging
+- git commit - m"message": push code lên repository
+
+2. Liệt kê file theo từng vùng:
+a. Tạo 3 file: file1, file2, file3 > chưa xuất hiện tại vùng nào
+b. Chạy git init > file1, file2, file3 > xuất hiện tại vùng Working Directory
+c. Chạy git commit -m”init project” > file1, file2, file3 > xuất hiện tại vùng repository
+d. Chạy git add file1 > file1 xuất hiện tại vùng staging
+e. Chạy lệnh: git commit -m"add file1" > file1 xuất hiện tại vùng repository
+f. Chạy lệnh: git add file > lỗi không có tên file trùng hợp
