@@ -1,0 +1,87 @@
+1/ git commit --amend: câu lệnh dùng để thay đổi commit message
+- gõ i -> vào chế độ insert
+- gõ esc -> thoát insert
+- gõ ":wq" -> write and quit
+git commit --amend -m"message": câu lệnh dùng để thay đổi commit message, thao tác nhanh hơn không cần mở hộp thoại vim
+git restore --staged <file>: câu lệnh đưa file từ vùng Staging về vùng Working Directory
+git reset HEAD~1: câu lệnh đưa file từ vùng Repository về vùng Working Directory
+
+2/
+a. Tạo 3 file: file1, file2, file3
+- Local: file1, file2, file3
+- Working:
+- Staging:
+- Repository:
+b. Chạy lệnh: git init
+- Local:
+- Working: file1, file2, file3
+- Staging:
+- Repository:
+c. Chạy lệnh: git init -m"init project"
+- Local:
+- Working: file1, file2, file3
+- Staging:
+- Repository:
+d. Chạy lệnh: git add file1
+- Local:
+- Working: file2, file3
+- Staging: file1
+- Repository:
+e. Chạy lệnh: git commit -m"add file"
+- Local:
+- Working: file2, file3
+- Staging: file1
+- Repository:
+f. Chạy lệnh: git add .
+- Local:
+- Working: 
+- Staging: file1, file2, file3
+- Repository:
+g. Chạy lệnh: git restore --staged file2
+- Local:
+- Working: file2
+- Staging: file1, file 3
+- Repository:
+h. Chạy lệnh: git commit -m"add all files"
+- Local:
+- Working: file2
+- Staging:
+- Repository: file1, file3
+i. Chạy lệnh: git reset HEAD~1
+- Local:
+- Working: file2
+- Staging: file1, file3
+- Repository:
+
+3/
+a. Tạo file file1.txt, file2.txt, oops/file3.txt.
+- Local: file1.txt, file2.txt, oops/file3.txt
+- Working: 
+- Staging: 
+- Repository:
+b. Chạy lệnh: git init
+- Local: 
+- Working: file1.txt, file2.txt, oops/file3.txt
+- Staging: 
+- Repository:
+c. Thêm file .gitignore, thêm vào 2 dòng:
+i. file1.txt (file)
+- Local: 
+- Working: file2.txt, oops/file3.txt
+- Staging: 
+- Repository:
+ii. oops/ (folder)
+- Local: 
+- Working: file2.txt
+- Staging: 
+- Repository:
+d. Chạy lệnh: git add .
+- Local: 
+- Working: 
+- Staging: file2.txt
+- Repository:
+e. Chạy lệnh: git commit -m"init project"
+- Local: 
+- Working: 
+- Staging: 
+- Repository: file2.txt
