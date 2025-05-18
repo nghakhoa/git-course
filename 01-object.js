@@ -22,6 +22,7 @@ let student = {
         english: 85,
     }
 }
+console.log(student.grades["math"]);
 
 let settings = {
     volume: 50,
